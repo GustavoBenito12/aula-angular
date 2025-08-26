@@ -1,0 +1,17 @@
+<button (click)="toggleLista()">
+  {{ mostrarLista ? 'Esconder' : 'Mostrar' }} Lista
+</button>
+
+<div *ngIf="mostrarLista">
+  <ul>
+    <li *ngFor="let aluno of alunos"
+        [ngClass]="{ 'ativo': aluno.ativo, 'inativo': !aluno.ativo }"
+        [ngStyle]="{'font-size.px': fontSize}">
+      {{ aluno.id }} - {{ aluno.nome }} - {{ aluno.ativo ? 'Ativo' : 'Inativo' }}
+    </li>
+  </ul>
+
+  <button (click)="aumentarFonte()">+</button>
+  <button (click)="diminuirFonte()">-</button>
+</div>
+

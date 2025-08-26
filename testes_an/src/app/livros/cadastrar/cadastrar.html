@@ -5,3 +5,14 @@
 <img [src]="caminhoimagem" width="300" height="300" />
 
 <button (click)="dizerOi()">clique Aqui</button>
+
+<p *ngIf="mostrarMensagem">esta mensagem é exibida </p>
+<button (click) ="toggleMensagem()">alterar mensagem</button>
+
+<ul>
+    <li *ngFor ="let item of listaItens">{{ item }}</li>
+</ul>
+
+<div [ngClass]="{'destaque' : isDestaque, 'erro' : hasError}">
+    Este elemento tem classes dinamicas
+</div>

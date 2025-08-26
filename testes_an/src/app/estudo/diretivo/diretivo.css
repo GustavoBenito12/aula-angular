@@ -1,0 +1,11 @@
+.ativo {
+  color: blue;
+  font-weight: bold;
+}
+
+.inativo {
+  color: red;
+}
+button {
+  margin: 5px;
+}

@@ -9,8 +9,17 @@ import { Component } from '@angular/core';
 export class Cadastrar {
  nome = 'Gustavo';
  caminhoimagem = '';
-
  dizerOi(){
   this.nome = 'ola pessoal'
+ }
+ listaItens = ['maça', 'laranja'];
+
+ mostrarMensagem=false
+
+ isDestaque = true;
+ hasError = false;
+
+ toggleMensagem(){
+  this.mostrarMensagem = !this.mostrarMensagem;
  }
 }
