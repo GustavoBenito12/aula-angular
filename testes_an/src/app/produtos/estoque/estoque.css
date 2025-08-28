@@ -1,0 +1,107 @@
+
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.botoes-acao {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+
+.tabela-produtos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabela-produtos th,
+.tabela-produtos td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela-produtos th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #495057;
+}
+
+.tabela-produtos tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.tabela-produtos tr:hover {
+  background-color: #e9ecef;
+}
+
+
+.disponivel {
+  color: #28a745 !important;
+  font-weight: bold;
+}
+
+.indisponivel {
+  color: #dc3545 !important;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .tabela-produtos {
+    font-size: 14px;
+  }
+  
+  .botoes-acao {
+    flex-direction: column;
+    align-items: center;
+  }
+}

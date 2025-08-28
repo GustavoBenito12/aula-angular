@@ -2,11 +2,7 @@ import { Component } from '@angular/core';
 
 
 
-interface Aluno {
-  id: number;
-  nome: string;
-  ativo: boolean;
-}
+
 @Component({
   selector: 'app-diretivo',
   standalone: false,
@@ -14,7 +10,7 @@ interface Aluno {
   styleUrl: './diretivo.css'
 })
 export class Diretivo {
-  alunos: Aluno[] = [
+  alunos = [
     { id: 123, nome: 'Thiago', ativo: true },
     { id: 234, nome: 'Roberto', ativo: false },
     { id: 345, nome: 'Mariana', ativo: true }

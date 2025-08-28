@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LivrosModule } from './livros/livros-module';
 import { ContadorModule } from './contador/contador-module';
 import { EstudoModule } from './estudo/estudo-module';
+import { ProdutosModule } from './produtos/produtos-module';
 
 const routes: Routes = [{ path: 'livros', loadChildren: () => import('./livros/livros-module').then(m => m.LivrosModule) },
 
@@ -11,7 +12,8 @@ const routes: Routes = [{ path: 'livros', loadChildren: () => import('./livros/l
   },
   
   {path: 'estudo', loadChildren: () => import('./estudo/estudo-module').then(m => m.EstudoModule)
-  }
+  },
+  {path: 'produtos', loadChildren: () => import('./produtos/produtos-module').then(m => m.ProdutosModule)}
 ];
 
 
